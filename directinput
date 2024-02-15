@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+a = 10
+b = 5
+c = 7
+x = np.linspace(-10, 10, 100)  
+y = a * x**2 + b * x + c
+plt.plot(x, y, label=f'y = {a}x^2 + {b}x + {c}')
+plt.xlabel('Time')
+plt.ylabel('Temperature')
+plt.title('Weather model')
